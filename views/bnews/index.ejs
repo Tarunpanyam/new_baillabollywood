@@ -1,0 +1,599 @@
+<html>
+<head>
+  <title>Bollywood News</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+  <!----------------------------Navbar Css Files---------------------->
+  <link rel="stylesheet" type="text/css" href="/stylesheets/navbar.css" />
+  <link rel="stylesheet" type="text/css" href="/stylesheets/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+<style type="text/css">
+body {
+    background: #fc8b4f;
+}
+ html,body
+ {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+ } 
+ 
+.col-12.col-sm-12.col-md-5, .col-12.col-sm-12.col-md-7 {
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 100%;
+}
+.image-wrapper img {
+    width: 100%;
+
+}
+#lt-blog p {
+    padding-top: 10px;
+} 
+#read-btn {
+    background: transparent;
+    font-size: 20px;
+    padding: 10px 40px;
+    border: 2px solid black;
+    color: black;
+    border-radius: 20px;
+    background:linear-gradient(to right,#ff5f6d,#f7b733)
+}
+  
+#read-btn:hover {
+    border-color: white;
+    color: #fff;
+}
+
+div#lt-blog p span {
+    color: #a9a9a9;
+}
+
+.container p {font-size:20px; }
+
+@media only screen and (max-width: 600px) {
+  .mobile-container{
+    width:90%
+  }
+ .title-div{
+   font-size: 25px;
+ }
+ .container-xtr{
+   width: 95%;
+ }
+}
+@media only screen and (min-width:600px){
+  .mobile-container{
+    width:90%;
+  }
+.title-div{
+  font-size: 40px;;
+}
+div#top-post-container p {
+    text-align: justify;
+}
+
+div#top-post-container h1 {
+    text-align: justify;
+}
+
+}
+
+
+
+
+.blog-list .blog-meta.big-meta h4 {
+    margin-left: -20%;
+    margin-top: 1rem;
+    background-color: #10112c;
+    padding: 1rem 1.5rem 1rem;
+}
+
+.blog-meta.big-meta h4 {
+    font-size: 24px;
+}
+
+.blog-meta.big-meta h4 a{
+    color: #fff;
+}
+
+div#top-post-container {
+    background: #10112c;
+}
+.container.mobile-container p {
+    color: #fff !important;
+}
+.container.mobile-container h1 {
+    color: #fff !important;
+}
+
+.image-wrapper {
+    background: #10112c;
+    color: #fff;
+    padding: 15px;
+}
+
+@media screen and (max-width: 768px) {
+
+.row.d-flex.justify-content-between img {
+    width: 80% !important;
+    height: 260px !important;
+    margin-left: 40px !important;
+}
+
+.row.d-flex.justify-content-between p {
+    margin-left: 40px !important;
+}
+
+.blog-list .blog-meta.big-meta h4 {
+    margin-left: 0 !important; }
+
+}
+section.introText {
+    width: 100%;
+    
+    background: linear-gradient(to bottom,#ff5f6d,#fc8b4f);
+    padding-bottom: 10px;
+    text-align: justify;
+    padding: 30px 30px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+
+
+
+
+</style>
+
+<!------Boot Strap Files-->
+
+
+<script src="/scripts/spanish-to-english-translate.js"></script>
+</head>
+
+
+
+<body>
+<!------------------------------------Navigation Bar Section-One------------------------------------------>
+<% include ../partials/navbar.ejs %>   
+
+<section class="introText" >
+  <h1 class="text-center" style="font-family: 'Ananda Namaste Regular';font-size:50px;
+  ">Canal Bollywood
+  </h1>
+  <h5 style="font-weight:100; font-size:larger; line-height: 1.1em;">
+    
+    Bollywood es mucho más que una industria cinematográfica, se trata de todo un universo creativo, en el que la magia del cine y de 
+    la música, hacen de las suyas para mantener a los espectadores con el sentimiento a flor de piel. 
+<br><br>
+Tan increíble es Bollywood, que se ha desbordado de la pantalla grande y se ha colado en la vida cotidiana de todos nosotros, formando 
+parte de nuestra cultura popular y dando mucho de qué hablar al respecto de sus más famosos rostros, sus apasionadas polémicas, los 
+romances más escandalosos y las novedosas propuestas de cine musical.
+<br><br>
+En fin, nunca está de más saber un poco del medio del espectáculo y en Canal Bollywood encontrarás las últimas noticias, lo que es 
+tendencia y lo que no, reseñas, recomendaciones, listas de popularidad y lo mejor del universo bollywoodense,  todo al alcance de tu 
+mano.
+<br><br>
+
+<hr>
+</h5>
+</section>
+  
+
+
+
+
+  <div class="container" style= "padding-top: 40px;">
+    <div class="row" style= "padding: 20px 0px; padding-bottom:10px;">
+      <div class="col-12 col-sm-12 col-md-9" style="padding-left: 0px; padding-right: 0px;">
+         <div class="container">
+          <div class="promo" style="--overlay-color: hotpink">
+           
+            <h2 style="padding-top:20px; margin-bottom:20px; font-weight: bold; font-family:'Ananda Namaste Regular';" class="display-4" >
+              Lo mejor de Bollywood
+             </h2>
+          <div class="image-wrapper" style="padding: 20px 20px 0px 20px;">
+            
+                  <img src="<%=news[0].image%>">
+              <!-- <h4 style="font-style: italic; margin-top: 8px; font-size: 22px; ">Bollywood News</h4> -->
+              <hr>
+    
+              </div>
+
+              <h2 style="color: white;">
+                <%=news[0].title%>
+            </h2>
+            <div>
+              <p class="target"><%=text%></p>
+          </div>
+          <a href="/canal-bollywood/posts/<%=news[0]._id%>">
+      <button type="button" style=" margin-bottom:10px;padding: 12px 35px; background: transparent;  border: 3px solid #10112c;
+      color: #10112c; font-size: 18px;">Ver Mas</button>
+             </a>
+          </div>
+        </div>
+
+
+        
+
+
+      </div>
+  
+  
+      
+  
+      <div class="col-12 col-sm-12 col-md-3" style="padding-left: 0px; padding-right: 0px;"> 
+        
+        <div class="container">
+          <h3 style="font-size: 34px; margin-bottom:20px; font-weight: bold; font-family:'Ananda Namaste Regular';"> 
+            ¿Qué sabes del cine indio? </h3>
+
+          <div class="image-wrapper" style="margin-bottom: 30px;">
+            <a href="/canal-bollywood/posts/<%=news[1]._id%>">
+                  <img src="<%=news[1].image%>">
+              </a>
+                  <h4 style="font-style: italic; margin-top: 8px; font-size: 18px; margin-bottom: 0px;">
+                    <%=news[1].title%></h4>
+      
+          </div>
+      
+             <div class="image-wrapper" style="margin-bottom: 30px;">
+               <a href="/canal-bollywood/posts/<%=news[2]._id%>">
+              <img src="<%=news[2].image%>">
+                 </a>
+              <h4 style="font-style: italic; margin-top: 8px; font-size: 18px; margin-bottom: 0px;">
+                <%=news[2].title%></h4>
+  
+               </div>
+
+
+               <div class="image-wrapper" style="margin-bottom: 30px;">
+                <a href="/canal-bollywood/posts/<%=news[3]._id%>">
+                  <img src="<%=news[3].image%>">
+                  </a>
+               <h4 style="font-style: italic; margin-top: 8px; font-size: 18px; margin-bottom: 0px;">
+                 <%=news[3].title%></h4>
+   
+                </div>
+
+
+      
+             
+    
+      </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <hr style="border-top: 1px solid rgb(229, 229, 229);"> 
+   </div>
+
+
+
+
+  <div class="container">
+    <hr style="border-top: 1px solid rgb(229, 229, 229);"> 
+   </div>
+
+
+
+
+<section class="section">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+              <div class="page-wrapper">
+                  <div class="blog-top clearfix">                      
+    <h2 style="padding-top:20px; margin-bottom:20px; font-weight: bold; font-family:'Ananda Namaste Regular';" class="display-4" >
+      Historias de Bollywood
+                      </h2>
+                  </div><!-- end blog-top -->
+
+                  <div class="blog-list clearfix">
+
+
+                      <div class="blog-box row">
+                          <div class="col-md-4">
+                              <div class="post-media">
+                                <a href="/canal-bollywood/posts/<%=news[2]._id%>">
+                                      <img src="<%=news[4].image%>" alt="" class="img-fluid" style="width: 100%; height: 230px;">
+                                      <div class="hovereffect"></div>
+                                  </a>
+                              </div><!-- end media -->
+                          </div><!-- end col -->
+
+                          <div class="blog-meta big-meta col-md-8">
+                            <h4 style="line-height: 2em; margin-top: 2em; margin-bottom: 2em;"><a href="/canal-bollywood/posts/<%=news[4]._id%>" title="">  <%=news[4].title%></a></h4>
+                                                  
+                          </div><!-- end meta -->
+                      </div><!-- end blog-box -->
+
+
+                      <hr class="invis">
+
+
+                      
+                      <div class="blog-box row">
+                        <div class="col-md-4">
+                            <div class="post-media">
+                                <a href="/canal-bollywood/posts/<%=news[5]._id%>" title="">
+                                    <img src="<%=news[5].image%>" alt="" class="img-fluid" style="width: 100%; height: 230px;">
+                                    <div class="hovereffect"></div>
+                                </a>
+                            </div><!-- end media -->
+                        </div><!-- end col -->
+
+                        <div class="blog-meta big-meta col-md-8">
+                          <h4 style="line-height: 2em; margin-top: 2em; margin-bottom: 2em;"><a href="/canal-bollywood/posts/<%=news[5]._id%>" title="">   <%=news[5].title%></a></h4>
+                                                
+                        </div><!-- end meta -->
+                    </div><!-- end blog-box -->
+
+                    <hr class="invis">
+
+
+                    <div class="blog-box row">
+                      <div class="col-md-4">
+                          <div class="post-media">
+                              <a href="/canal-bollywood/posts/<%=news[6]._id%>" title="">
+                                  <img src="<%=news[6].image%> " alt="" class="img-fluid" style="width: 100%; height: 230px;">
+                                  <div class="hovereffect"></div>
+                              </a>
+                          </div><!-- end media -->
+                      </div><!-- end col -->
+
+                      <div class="blog-meta big-meta col-md-8">
+                        <h4 style="line-height: 2em; margin-top: 2em; margin-bottom: 2em;"><a href="/canal-bollywood/posts/<%=news[6]._id%>" title="">  <%=news[6].title%></a></h4>
+                            <p>
+                              <!--
+                               Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.-->
+                               </p>                        
+                      </div><!-- end meta -->
+                  </div><!-- end blog-box -->
+
+                  <hr class="invis">
+
+
+                  <div class="row d-flex justify-content-between">
+                
+            
+                    <div id="lt-blog" class="col-12 col-md-4 my-2">
+                      <a href="/canal-bollywood/posts/<%=news[7]._id%>">
+                    <img src="<%=news[7].image%>" alt="image" style="width:100%; height:200px;">
+                  </a>
+                  <p style="font-weight: bold; font-size: 17px; ">
+                    <%=news[7].title%></p>
+                  
+                </div>
+        
+                <div id="lt-blog" class="col-12 col-md-4 my-2">
+                  <a href="/canal-bollywood/posts/<%=news[8]._id%>">
+                <img src="<%=news[8].image%>" alt="image" style="width:100%; height:200px;">
+              </a>
+              <p style="font-weight: bold; font-size: 17px; ">
+                <%=news[8].title%></p>
+              
+               </div>
+              
+             
+                <div id="lt-blog" class="col-12 col-md-4 my-2">
+                      <a href="/canal-bollywood/posts/<%=news[9]._id%>">
+                    <img src="<%=news[9].image%>" alt="image" style="width:100%; height:200px;">
+                  </a>
+                  <p style="font-weight: bold; font-size: 17px; ">
+                    <%=news[9].title%> </p>
+                  
+                </div>
+      
+              </div> 
+
+
+
+
+              <div class="row d-flex justify-content-between">
+                
+            
+                <div id="lt-blog" class="col-12 col-md-6 my-2">
+                  <h4 style="font-size: 26px; margin-bottom:20px; font-weight: bold; font-family:'Ananda Namaste Regular';"> 
+                    Recomendación de BailaBollywood</h4>
+                  <a href="/canal-bollywood/posts/<%=news[10]._id%>">
+                <img src="<%=news[10].image%>" alt="image" style="width:100%; height:300px;">
+              </a>
+              <p style="font-weight: bold; font-size: 17px; ">
+                <%=news[10].title%>  
+              </p>
+              
+               </div>
+    
+            <div id="lt-blog" class="col-12 col-md-6 my-2">
+              <h4 style="font-size: 26px; margin-bottom:20px; font-weight: bold; font-family:'Ananda Namaste Regular';"> Recomendación de BailaBollywood</h4>
+              <a href="/canal-bollywood/posts/<%=news[11]._id%>">
+            <img src="<%=news[11].image%>" alt="image" style="width:100%; height:300px;">
+          </a>
+          <p style="font-weight: bold; font-size: 17px; ">
+            <%=news[11].title%> </p>
+          
+           </div>
+          
+    
+        
+          </div> 
+
+
+
+
+
+                  </div><!-- end blog-list -->
+              </div><!-- end page-wrapper -->
+          </div><!-- end col -->
+
+
+
+
+
+
+
+          
+
+
+
+
+
+          
+          <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+              <div class="sidebar">
+                <div class="blog-top clearfix">                      
+                  <h4 style="font-size: 36px; margin-bottom:20px; font-weight: bold; font-family:'Ananda Namaste Regular';"> 
+                    El mundo de Bollywood </h4>
+              </div><!-- end blog-top -->
+                  <div class="widget">
+
+                    <div class="container">
+
+                      <div class="image-wrapper" style="margin-bottom: 30px;">
+                        
+                        <a href="/canal-bollywood/posts/<%=news[12]._id%>">
+                              <img src="<%=news[12].image%>">
+                          </a>
+                              <h4 style="font-style: italic; margin-top: 8px; font-size: 18px; margin-bottom: 0px;">
+                                <%=news[12].title%></h4>
+                  
+                      </div>
+                    </div>
+
+                  
+                  </div><!-- end widget -->
+
+
+                  <div class="widget">
+
+                    <div class="container">
+
+                      <div class="image-wrapper" style="margin-bottom: 30px;">
+                        
+                        <a href="/canal-bollywood/posts/<%=news[13]._id%>">
+                              <img src="<%=news[13].image%>">
+                          </a>
+                              <h4 style="font-style: italic; margin-top: 8px; font-size: 18px; margin-bottom: 0px;">
+                                <%=news[13].title%></h4>
+                  
+                      </div>
+                    </div>
+
+                  
+                  </div><!-- end widget -->
+
+                  
+                  <div class="widget">
+
+                    <div class="container">
+
+                      <div class="image-wrapper" style="margin-bottom: 30px;">
+                        
+                        <a href="/canal-bollywood/posts/<%=news[14]._id%>">
+                              <img src="<%=news[14].image%>">
+                          </a>
+                              <h4 style="font-style: italic; margin-top: 8px; font-size: 18px; margin-bottom: 0px;">
+                                <%=news[14].title%></h4>
+                  
+                      </div>
+                    </div>
+
+                  
+                  </div><!-- end widget -->
+
+
+                     
+                  <div class="widget">
+
+                    <div class="container">
+
+                      <div class="image-wrapper" style="margin-bottom: 30px;">
+                        
+                        <a href="/canal-bollywood/posts/<%=news[15]._id%>">
+                              <img src="<%=news[15].image%>">
+                          </a>
+                              <h4 style="font-style: italic; margin-top: 8px; font-size: 18px; margin-bottom: 0px;">
+                                <%=news[15].title%></h4>
+                  
+                      </div>
+                    </div>
+
+                  
+                  </div><!-- end widget -->
+
+
+                     
+                  <div class="widget">
+
+                    <div class="container">
+
+                      <div class="image-wrapper" style="margin-bottom: 30px;">
+                        
+                        <a href="/canal-bollywood/posts/<%=news[16]._id%>">
+                              <img src="<%=news[16].image%>">
+                          </a>
+                              <h4 style="font-style: italic; margin-top: 8px; font-size: 18px; margin-bottom: 0px;">
+                                <%=news[16].title%></h4>
+                  
+                      </div>
+                    </div>
+
+                  
+                  </div><!-- end widget -->
+
+               
+
+              </div><!-- end sidebar -->
+          </div><!-- end col -->
+      </div><!-- end row -->
+  </div><!-- end container -->
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<% include ../partials/footerAll.ejs %>
+
+
+
+
+  
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script>
+  $(".target").each(function(){
+    let text = ( $(this).text());
+    //text = text.substring(0,200);
+    //text = text + "...."
+    let html = $.parseHTML(text);
+    $(this).empty();
+    $(this).append(html);
+  });
+</script>
+</body>
+</html>

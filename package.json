@@ -1,0 +1,57 @@
+{
+  "name": "new-project",
+  "version": "1.0.0",
+  "description": "Website",
+  "main": "app.js",
+  "dependencies": {
+    "async": "^3.2.0",
+    "await-to-js": "^2.1.1",
+    "axios": "^0.19.2",
+    "bcrypt": "^3.0.8",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^8.2.0",
+    "ejs": "^2.7.4",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-fileupload": "^1.1.7-alpha.3",
+    "express-sanitizer": "^1.0.5",
+    "express-session": "^1.17.0",
+    "flat-cache": "^2.0.1",
+    "fs": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "memcached": "^2.2.2",
+    "memory-cache": "^0.2.0",
+    "method-override": "^3.0.0",
+    "mongodb": "^3.5.9",
+    "mongoose": "^5.9.19",
+    "nodemailer": "^6.4.4",
+    "passport": "^0.4.1",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.0.1",
+    "path": "^0.12.7",
+    "promise": "^8.1.0",
+    "rss-to-json": "^1.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Pawan & Vaibhav",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiteshrew/BailaBollywood.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hiteshrew/BailaBollywood/issues"
+  },
+  "homepage": "https://github.com/hiteshrew/BailaBollywood#readme"
+}

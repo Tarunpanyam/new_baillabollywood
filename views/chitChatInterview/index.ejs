@@ -1,0 +1,721 @@
+<html>
+<head>
+  <title>Chit Chat</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+  <!----------------------------Navbar Css Files---------------------->
+  <link rel="stylesheet" type="text/css" href="/stylesheets/navbar.css" />
+  <link rel="stylesheet" type="text/css" href="/stylesheets/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+<style type="text/css">
+body {
+    background: #fc8b4f;
+}
+
+ html,body
+ {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+ } 
+ 
+.col-12.col-sm-12.col-md-5, .col-12.col-sm-12.col-md-7 {
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 100%;
+}
+.image-wrapper img {
+    width: 100%;
+
+}
+#lt-blog p {
+    padding-top: 10px;
+} 
+#read-btn {
+    background: transparent;
+    font-size: 20px;
+    padding: 10px 40px;
+    border: 2px solid black;
+    color: black;
+    border-radius: 20px;
+    background:linear-gradient(to right,#ff5f6d,#f7b733)
+}
+  
+#read-btn:hover {
+    border-color: white;
+    color: #fff;
+}
+
+div#lt-blog p span {
+    color: #a9a9a9;
+}
+
+.container p {font-size:20px; }
+
+@media only screen and (max-width: 600px) {
+  .mobile-container{
+    width:90%
+  }
+ .title-div{
+   font-size: 25px;
+ }
+ .container-xtr{
+   width: 95%;
+ }
+}
+@media only screen and (min-width:600px){
+  .mobile-container{
+    width:90%;
+  }
+.title-div{
+  font-size: 40px;;
+}
+div#top-post-container p {
+    text-align: justify;
+}
+
+div#top-post-container h1 {
+    text-align: justify;
+}
+
+}
+
+
+
+
+.blog-list .blog-meta.big-meta h4 {
+    margin-left: -20%;
+    margin-top: 1rem;
+    background-color: #10112c;
+    padding: 1rem 1.5rem 1rem;
+}
+
+.blog-meta.big-meta h4 {
+    font-size: 24px;
+}
+
+.blog-meta.big-meta h4 a{
+    color: #fff;
+}
+
+.insta{
+  border-radius: 10px;
+}
+
+div#top-post-container {
+    background: #10112c;
+}
+.container.mobile-container p {
+    color: #fff !important;
+}
+.container.mobile-container h1 {
+    color: #fff !important;
+}
+
+.image-wrapper {
+    background: #10112c;
+    color: #fff;
+    padding: 15px;
+}
+body {
+    background: #f8b336;
+}
+
+.blog-list .blog-meta.big-meta h4 {
+    background-color: #003f79; }
+
+.image-wrapper {
+    background: #003f79;
+}
+
+
+@media screen and (max-width: 768px) {
+
+.blog-list .blog-meta.big-meta h4 {
+    margin-left: 0 !important; }
+
+
+.container.grid-layout img {
+    width: 80% !important;
+    height: 260px !important;
+    margin-left: 40px !important;
+}
+
+.container.grid-layout p {
+    margin-left: 40px !important;
+}
+}
+section.introText {
+    width: 100%;
+    
+    background: linear-gradient(to bottom,#ff5f6d,#f8b336);
+    padding-bottom: 10px;
+    text-align: justify;
+    padding: 30px 30px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+
+
+</style>
+
+<!------Boot Strap Files-->
+
+
+<script src="/scripts/spanish-to-english-translate.js"></script>
+</head>
+
+
+<body>
+  <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0" nonce="eyJ8bwQi"></script> 
+<!------------------------------------Navigation Bar Section-One------------------------------------------>
+
+  
+
+<% include ../partials/navbar.ejs %>
+
+<section class="introText" >
+  <h1 class="text-center" style="font-family: 'Ananda Namaste Regular';font-size:50px;
+  ">Chai Con Baila Bollywood
+  </h1>
+  <h5 style="font-weight:100; font-size:larger; line-height: 1.1em;">
+    
+    Los vínculos culturales alrededor del mundo, son asombrosos. A lo largo de la historia, los seres humanos nos hemos sabido unir 
+    y complementar sin importar la distancia,  y eso nos ha permitido enriquecer nuestro conocimiento, adquirir nuevas experiencias 
+    de vida y diversificar nuestras formas de pensar.
+<br><br>
+    India y el mundo hispanohablante no son ajenos al intercambio cultural, y al contrario de lo que pueda pensarse, comparten muchas 
+    cosas; la gastronomía, la música, el cine, todo tiene una razón de ser y un punto de intersección con el mundo exterior.
+<br>    <br> 
+    <strong>Chai con Baila Bollywood</strong> es un espacio que explora estos vínculos culturales entre la India, España y América 
+    Latina, a través de voces diversas y contenido de interés, que retroalimenta la identidad de nuestras comunidades, para así, 
+    afianzar el compromiso de cooperación y hermandad entre naciones.
+    <br><br>
+
+<hr>
+</h5>
+</section>
+
+
+
+<section class="section">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+              <div class="page-wrapper">
+                  <div class="blog-top clearfix">                      
+                      <h2 style="padding-top:20px; margin-bottom:20px; font-weight: bold; font-family:'Ananda Namaste Regular';" class="display-4" >
+                        últimas entrevistas
+                      </h2>
+                  </div><!-- end blog-top -->
+
+                  <div class="blog-list clearfix">
+
+
+                      <div class="blog-box row">
+                          <div class="col-md-4">
+                              <div class="post-media">
+                                  <a href="/chai-con-baila-bollywood/posts/<%=chitChatInt[0]._id%>" title="">
+                                      <img src="<%=chitChatInt[0].image%>" alt="" class="img-fluid" style="width: 100%; height: 230px;">
+                                      <div class="hovereffect"></div>
+                                  </a>
+                              </div><!-- end media -->
+                          </div><!-- end col -->
+
+                          <div class="blog-meta big-meta col-md-8">
+                            <h4 style="line-height: 2em; color: white;">  <span style="font-size: 18px; color: #f7bc42; line-height: 2em;">
+                              </span> <%=chitChatInt[0].title%></h4>
+                                <p>
+                                  <%=chitChatInt[0].text%>
+                                   </p>                        
+                          </div><!-- end meta -->
+                      </div><!-- end blog-box -->
+
+
+                      <hr class="invis">
+
+
+                      
+                      <div class="blog-box row">
+                        <div class="col-md-4">
+                            <div class="post-media">
+                                <a href="/chai-con-baila-bollywood/posts/<%=chitChatInt[1]._id%>" title="">
+                                    <img src="<%=chitChatInt[1].image%>" alt="" class="img-fluid" style="width: 100%; height: 230px;">
+                                    <div class="hovereffect"></div>
+                                </a>
+                            </div><!-- end media -->
+                        </div><!-- end col -->
+
+                        <div class="blog-meta big-meta col-md-8">
+                          <h4 style="line-height: 2em; color: white;">  <span style="font-size: 18px; color: #f7bc42; line-height: 2em;">
+                          </span> <%=chitChatInt[1].title%></h4>
+                              <p>
+                                <%=chitChatInt[1].text%>
+                                 </p>                        
+                        </div><!-- end meta -->
+                    </div><!-- end blog-box -->
+
+                    <hr class="invis">
+
+
+                    <div class="blog-box row">
+                      <div class="col-md-4">
+                          <div class="post-media">
+                              <a href="/chai-con-baila-bollywood/posts/<%=chitChatInt[2]._id%>" title="">
+                                  <img src="<%=chitChatInt[2].image%>" alt="" class="img-fluid" style="width: 100%; height: 230px;">
+                                  <div class="hovereffect"></div>
+                              </a>
+                          </div><!-- end media -->
+                      </div><!-- end col -->
+
+                      <div class="blog-meta big-meta col-md-8">
+                        <h4 style="line-height: 2em; color: white;">  <span style="font-size: 18px; color: #f7bc42; line-height: 2em;">
+                        </span> <%=chitChatInt[2].title%></h4>
+                            <p>
+                              <%=chitChatInt[2].text%>
+                               </p>                        
+                      </div><!-- end meta -->
+                  </div><!-- end blog-box -->
+
+                  <hr class="invis">
+
+
+                  <div class="row d-flex justify-content-between">
+                
+            
+                    <div id="lt-blog" class="col-12 col-md-4 my-2">
+                      <a href="/chai-con-baila-bollywood/posts/<%=chitChatInt[3]._id%>">
+                    <img src="<%=chitChatInt[3].image%>" alt="image" style="width:100%; height:200px;">
+                  </a>
+                  <p style="font-weight: bold; font-size: 17px; ">
+                    <%=chitChatInt[3].title%>
+                    </p>
+                  
+                </div>
+        
+                <div id="lt-blog" class="col-12 col-md-4 my-2">
+                  <a href="/chai-con-baila-bollywood/posts/<%=chitChatInt[4]._id%>">
+                <img src="<%=chitChatInt[4].image%>" alt="image" style="width:100%; height:200px;">
+              </a>
+              <p style="font-weight: bold; font-size: 17px; ">
+                <%=chitChatInt[4].title%>
+                </p>
+              
+               </div>
+              
+             
+                <div id="lt-blog" class="col-12 col-md-4 my-2">
+                      <a href="/chai-con-baila-bollywood/posts/<%=chitChatInt[5]._id%>">
+                    <img src="<%=chitChatInt[5].image%>" alt="image" style="width:100%; height:200px;">
+                  </a>
+                  <p style="font-weight: bold; font-size: 17px; ">
+                    <%=chitChatInt[5].title%>
+                    </p>
+                  
+                </div>
+      
+              </div> 
+
+
+
+
+              <div class="row d-flex justify-content-between">
+                
+            
+                <div id="lt-blog" class="col-12 col-md-6 my-2">
+                  <!-- <h4 style="font-size: 26px; margin-bottom:20px; font-weight: bold; font-family:'Ananda Namaste Regular';"> Public News</h4> -->
+                  <a href="/chai-con-baila-bollywood/posts/<%=chitChatInt[6]._id%>">
+                <img src="<%=chitChatInt[6].image%>" alt="image" style="width:100%; height:300px;">
+              </a>
+              <p style="font-weight: bold; font-size: 17px; ">
+                <%=chitChatInt[6].title%>
+                </p>
+              
+               </div>
+    
+            <div id="lt-blog" class="col-12 col-md-6 my-2">
+              <!-- <h4 style="font-size: 26px; margin-bottom:20px; font-weight: bold; font-family:'Ananda Namaste Regular';"> Public News</h4> -->
+              <a href="/chai-con-baila-bollywood/posts/<%=chitChatInt[7]._id%>">
+            <img src="<%=chitChatInt[7].image%>" alt="image" style="width:100%; height:300px;">
+          </a>
+          <p style="font-weight: bold; font-size: 17px; ">
+            <%=chitChatInt[7].title%>
+            </p>
+          
+           </div>
+          
+    
+        
+          </div> 
+
+
+
+
+
+                  </div><!-- end blog-list -->
+              </div><!-- end page-wrapper -->
+          </div><!-- end col -->
+
+
+
+
+
+
+
+          
+
+
+
+
+
+          
+          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+              <div class="sidebar">
+                <div class="blog-top clearfix">                      
+                  <h2 style="padding-top:20px; margin-bottom:20px; font-weight: bold; font-family:'Ananda Namaste Regular';" class="display-4" >
+                    Lo último de youtube
+                  </h2>
+              </div><!-- end blog-top -->
+              <div class="widget">
+
+                <div class="container">
+
+                  <div class="image-wrapper" style="margin-bottom: 30px;">
+                    <!-- <h4>Public</h4> -->
+                    <a href="https://www.youtube.com/watch?v=2Drkz0y_nOU&t=2s">
+                          <img src="https://miro.medium.com/max/625/1*DbWCZ4Onvp1tiaEo3nRHxw.png">
+                      </a>
+                          <h4 style="font-style: italic; margin-top: 8px; font-size: 18px; margin-bottom: 0px;">
+                            David, un colombiano admirador de la música y la cultura india</h4>
+              
+                  </div>
+                </div>
+
+              
+              </div><!-- end widget -->
+
+              <div class="widget">
+
+                <div class="container">
+
+                  <div class="image-wrapper" style="margin-bottom: 30px;">
+                    <!-- <h4>Movies</h4> -->
+                    <a href="https://www.youtube.com/watch?v=QBOhSpgXc5I&t=2s">
+                          <img src="/images/Vinatha.png">
+                      </a>
+                          <h4 style="font-style: italic; margin-top: 8px; font-size: 18px; margin-bottom: 0px;">
+                            Entrevista con la señorita India España </h4>
+              
+                  </div>
+                </div>
+
+              
+              </div><!-- end widget -->
+
+              <div class="widget">
+
+                <div class="container">
+
+                  <div class="image-wrapper" style="margin-bottom: 30px;">
+                    <!-- <h4>South</h4> -->
+                    <a href="https://www.youtube.com/watch?v=OQmijq6Pc3w&t=520s">
+                          <img src="/images/Ruth.png">
+                      </a>
+                          <h4 style="font-style: italic; margin-top: 8px; font-size: 18px; margin-bottom: 0px;">
+                            Ruth, en conversación con BailaBollywood</h4>
+              
+                  </div>
+                </div>
+
+              
+              </div><!-- end widget -->
+
+                  <div class="widget">
+
+                    <div class="container">
+
+                      <div class="image-wrapper" style="margin-bottom: 30px;">
+                        <!-- <h4>Videos</h4> -->
+                        <a href="https://www.youtube.com/watch?v=unKUoNeu-I8">
+                              <img src="https://cdn-images-1.medium.com/max/1500/1*2b1JoFx9cDigvFdeAZ2wTQ.png">
+                          </a>
+                              <h4 style="font-style: italic; margin-top: 8px; font-size: 18px; margin-bottom: 0px;">
+                                Danza Clásica de la India</h4>
+                  
+                      </div>
+                    </div>
+
+                  
+                  </div><!-- end widget -->
+
+
+                  <div class="widget">
+
+                    <div class="container">
+
+                      <div class="image-wrapper" style="margin-bottom: 30px;">
+                        <!-- <h4>News</h4> -->
+                        <a href="https://www.youtube.com/watch?v=eH46Hsm3sQ8&t=1s">
+                              <img src="https://cdn-images-1.medium.com/max/1500/1*A0yGYslVc8h46AAkQVYomw.png">
+                          </a>
+                              <h4 style="font-style: italic; margin-top: 8px; font-size: 18px; margin-bottom: 0px;">
+                                Los festivales de la India | Ganesh Chaturthi</h4>
+                  
+                      </div>
+                    </div>
+
+                  
+                  </div><!-- end widget -->
+
+                  
+                  
+
+
+                     
+                  
+
+
+                     
+                  
+
+               
+
+              </div><!-- end sidebar -->
+          </div><!-- end col -->
+      </div><!-- end row -->
+  </div><!-- end container -->
+</section>
+
+
+
+
+
+
+
+<div class="container">
+  <hr style="border-top: 1px solid rgba(138, 138, 138, 0.63);"> 
+ </div>
+
+<div class="container grid-layout" style="margin-bottom: 50px;">
+
+  <h2 style="padding-top:20px; margin-bottom:20px; font-weight: bold; font-family:'Ananda Namaste Regular';" class="text-center display-4" >
+    Feeds de Facebook</h2> 
+    <div class="row d-flex justify-content-between">
+
+<div id="lt-blog" class="col-12 col-md-3 my-2" style="padding: 0px 5px;">
+  <a href="https://www.facebook.com/bailabollywood20/photos/a.112630643813489/142247190851834">
+<img src="/images/Nrityakala.jpg" alt="image" class="insta" style="width:100%; height:200px;">
+
+<p style="font-weight: bold; font-size: 17px; ">
+  NRITYAKALA
+</p>
+</a>
+</div>
+
+<div id="lt-blog" class="col-12 col-md-3 my-2" style="padding: 0px 5px;">
+  <a href="https://www.facebook.com/bailabollywood20/photos/a.112630643813489/141843397558880">
+<img src="/images/Taj Mahotsav.png" alt="image" class="insta" style="width:100%; height:200px;">
+
+<p style="font-weight: bold; font-size: 17px; ">
+  Taj Mahotsav
+</p>
+</a>
+</div>
+
+
+<div id="lt-blog" class="col-12 col-md-3 my-2" style="padding: 0px 5px;">
+  <a href="https://www.facebook.com/bailabollywood20/photos/a.112630643813489/130402378702982">
+<img src="/images/Disfrutando de las canciones de Bollywood.png" alt="image" class="insta" style="width:100%; height:200px;">
+
+<p style="font-weight: bold; font-size: 17px; ">
+  Disfrutando de las canciones de Bollywood
+</p>
+</a>
+</div>
+
+<div id="lt-blog" class="col-12 col-md-3 my-2" style="padding: 0px 5px;">
+  <a href="https://www.facebook.com/bailabollywood20/photos/a.112630643813489/127191805690706">
+<img src="/images/Conoces el baile Rouf.png" alt="image" class="insta" style="width:100%; height:200px;">
+
+<p style="font-weight: bold; font-size: 17px; ">
+  ¿Conoces el baile Rouf?
+</p>
+</a>
+</div>
+
+</div>
+
+
+
+
+
+<div class="container">
+  <hr style="border-top: 1px solid rgba(138, 138, 138, 0.63);"> 
+ </div>
+
+
+<div class="container grid-layout" style="margin-bottom: 50px;">
+
+  <h2 style="padding-top:20px; margin-bottom:20px; font-weight: bold; font-family:'Ananda Namaste Regular';" class="text-center display-4" >
+    Feeds de Instagram</h2> 
+
+  <div class="row d-flex justify-content-between">
+
+    <div id="lt-blog" class="col-12 col-md-3 my-2" style="padding: 0px 5px;">
+      <a href="https://www.instagram.com/p/CDP0MSWqoKG/">
+    <img src="https://miro.medium.com/max/875/1*l6ezP3FqvDgtpB5mud6Xhw.jpeg" alt="image" class="insta" style="width:100%; height:200px;">
+  
+  <p style="font-weight: bold; font-size: 17px; ">
+    #Kerela
+    </p>
+  </a>
+  </div>
+
+    <div id="lt-blog" class="col-12 col-md-3 my-2" style="padding: 0px 5px;">
+      <a href="https://www.instagram.com/p/CDNMQp0qpIS/">
+    <img src="https://miro.medium.com/max/875/1*3FfqjFHwQVo6dQW7DbZrTQ.jpeg" alt="image" class="insta" style="width:100%; height:200px;">
+    
+    <p style="font-weight: bold; font-size: 17px; ">
+      #Gujarat
+    </p>
+    </a>
+    </div>
+          
+      
+          <div id="lt-blog" class="col-12 col-md-3 my-2" style="padding: 0px 5px;">
+            <a href="https://www.instagram.com/p/CCzY_-dgp_0/?utm_source=ig_web_copy_link">
+          <img src="https://cdn-images-1.medium.com/max/500/1*Qaxsr_Q_-Y6gSEiKEkbV9g.jpeg" alt="image" class="insta" style="width:100%; height:200px;">
+        
+        <p style="font-weight: bold; font-size: 17px; ">
+          #Maharashtra
+          </p>
+        </a>
+      </div>
+
+      <div id="lt-blog" class="col-12 col-md-3 my-2" style="padding: 0px 5px;">
+        <a href="https://www.instagram.com/p/CCw4KhMHea_/?utm_source=ig_web_copy_link">
+      <img src="https://cdn-images-1.medium.com/max/500/1*MUmr1q5pLmPgNLITTMMEHg.jpeg" alt="image" class="insta" style="width:100%; height:200px;">
+    
+    <p style="font-weight: bold; font-size: 17px; ">
+      #Haryana
+      </p>
+    </a>
+  </div>
+
+  
+
+
+    
+
+
+  
+  
+    </div> 
+ 
+
+
+
+    <div class="row d-flex justify-content-between">
+
+      <div id="lt-blog" class="col-12 col-md-3 my-2" style="padding: 0px 5px;">
+        <a href="https://www.instagram.com/p/CCuE0K_Hl8_/?utm_source=ig_web_copy_link">
+      <img src="https://cdn-images-1.medium.com/max/500/1*6PsE-ItqFU_gcDw4sLFU-A.jpeg" alt="image" class="insta" style="width:100%; height:200px;">
+    
+    <p style="font-weight: bold; font-size: 17px; ">
+      Feliz cumpleaños @katrinakaif. 
+    
+      </p>
+    </a>
+    </div>
+
+      <div id="lt-blog" class="col-12 col-md-3 my-2" style="padding: 0px 5px;">
+        <a href="https://www.instagram.com/p/CCpQEnuq6uO/?utm_source=ig_web_copy_link">
+      <img src="https://cdn-images-1.medium.com/max/750/1*FV8oxUrC6rpFnCpHkuRAhQ.jpeg" alt="image" class="insta" style="width:100%; height:200px;">
+      
+      <p style="font-weight: bold; font-size: 17px; ">
+        Artesanía de Conchas - Kanyakumari
+      </p>
+      </a>
+      </div>
+          
+      <div id="lt-blog" class="col-12 col-md-3 my-2" style="padding: 0px 5px;">
+        <a href="https://www.instagram.com/p/CCmsPwKKMXu/?utm_source=ig_web_copy_link">
+      <img src="https://miro.medium.com/max/875/1*_R38Wwp7dN95CeQR_ZvYPw.jpeg" alt="image" class="insta" style="width:100%; height:200px;">
+      
+      <p style="font-weight: bold; font-size: 17px; ">
+        Cerámica Azul - Jaipur
+      </p>
+      </a>
+      </div>
+      
+      <div id="lt-blog" class="col-12 col-md-3 my-2" style="padding: 0px 5px;">
+        <a href="https://www.instagram.com/p/CCXKZC-Hgyy/?utm_source=ig_web_copy_link">
+      <img src="https://cdn-images-1.medium.com/max/500/1*oomqkSd0DYXY6C_bDQ1x7A.jpeg" alt="image" class="insta" style="width:100%; height:200px;">
+    
+    <p style="font-weight: bold; font-size: 17px; ">
+      Artesanía de Bambū y Caña - Noreste
+      </p>
+    </a>
+  </div>
+
+  
+
+
+
+
+
+
+
+</div> 
+
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<% include ../partials/footerAll.ejs %>
+
+
+
+
+
+  <script>
+  $(".target").each(function(){
+    let text = ( $(this).text());
+    text = text.substring(0,200);
+    text = text + "...."
+    let html = $.parseHTML(text);
+    $(this).empty();
+    $(this).append(html);
+  });
+</script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <% include partials/header.ejs %>
+  <style>
+    #radio-list{
+  position: absolute; 
+  left:70%; 
+  width: 30%;
+  top:13% ; 
+  z-index:1080;
+  display: none;
+  list-style-type: none;
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px;
+
+}
+
+#radio-list li img{
+  width:20%; height: auto;
+  border-radius: 10px;
+  
+}
+
+#radio-list li button{
+   border:none;
+   
+   background-color: white;
+}
+#radio-list li button:hover{
+  transform: scale(1.2) !important;
+}
+#radio-list li button span{
+ text-decoration: none;
+}
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  #radio-list{
+  position: absolute; 
+  left:50%; 
+  width: 50%;
+  top:13% ; 
+  z-index:1080;
+  display: none;
+  list-style-type: none;
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px;
+
+}
+}
+@media (max-width: 767.98px) { 
+  #radio-list{
+  position: absolute; 
+  left:0%; 
+  width: 100%;
+  top:13% ; 
+  z-index:1080;
+  display: block;
+  list-style-type: none;
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px;
+
+}
+ }
+  </style>
+</head>
+
+
+
+<body>
+
+   <!------------------------------------Navigation Bar Section-One------------------------------------------>
+<!------------------------------------Navigation Bar Section-One------------------------------------------>
+
+<nav id="nav-header" class="navbar navbar-expand-lg navbar-light sticky-top  ">
+  <a class="navbar-brand p-0 m-0" href="/"><img src="/images/Spanish-bolo-natraj-transparent.png" class="logo-navbar"
+      alt="Logo Of Baila Bollywood"></a>
+  <button class="navbar-toggler mr-3  " type="button" data-toggle="collapse"
+    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class=" navbar-toggler-icon"></span>
+  </button>
+
+ <div class="collapse navbar-collapse justify-content-center " id="navbarSupportedContent">
+        <ul class="navbar-nav nav nav-pills ">
+          <li class="nav-item m-xl-2 active">
+            <a class="nav-link text-center font-weight-bold " href="/">Inicio </a>
+          </li>
+          <li class="nav-item m-xl-2 active">
+            <a class="nav-link text-center font-weight-bold " href="/equipo">Equipo </a>
+          </li>
+          
+          
+          <li class="nav-item m-xl-2">
+            <a class="nav-link text-center font-weight-bold " href="/canal-bollywood">Canal Bollywood</a>
+          </li>
+          <li class="nav-item m-xl-2">
+            <a class="nav-link text-center font-weight-bold " href="/chai-con-baila-bollywood">Chai Con Baila Bollywood</a>
+          </li>
+          
+          <li class="nav-item m-xl-2">
+            <a class="nav-link text-center font-weight-bold " href="/danzas-folkloricas-de-India">Danzas folclóricas</a>
+          </li>
+          <li class="nav-item m-xl-2">
+            <a class="nav-link text-center font-weight-bold " href="/cafe-cultural">Cafe Cultural</a>
+          </li>
+          <li class="nav-item m-xl-2">
+            <a class="nav-link text-center font-weight-bold " href="/places">Viajes a la India</a>
+          </li>
+          <li class="nav-item m-xl-2">
+            <a class="nav-link text-center font-weight-bold " href="/blogs">Blogs</a>
+          </li>
+          <li class="nav-item m-xl-2">
+              <a class="nav-link text-center font-weight-bold " href="/sonidos-de-la-india">Sonidos De La India</a>
+            </li>
+          <li class="nav-item m-xl-2">
+              <a class="nav-link text-center font-weight-bold" data-toggle="modal" data-target="#exampleModalCenter" >Contacto</a>
+            </li>
+            <li class="nav-item m-xl-2">
+              <a class="nav-link text-center font-weight-bold " href="/distribution">distribution</a>
+            </li>
+          
+        </ul>
+        
+    
+  </div>
+  <div style="margin-right: 3%;" id="radio-button">
+    <img  src="https://img.icons8.com/pastel-glyph/64/000000/radio.png"/>
+  </div>
+</nav>
+<!------------------------------Radio List --------------------------->
+
+<div class="container">
+
+  <ul class="list-group" id="radio-list" >
+    <li class="list-group-item d-flex justify-content-between align-items-center" >
+      
+      <img src="https://cdn.onlineradiobox.com/img/logo/6/3906.v6.png" >
+      <span style="padding-left: 20px; padding-right: 20px;">  91.1 Radio City FM </span>
+      <button class="play-btn" onclick='playRadio("radio-city")' >
+        <audio id="radio-city" style="display: none;">
+
+        <source src="https://prclive1.listenon.in/">
+
+      </audio>
+      
+      
+      <span class="fa fa-play-circle" style="font-size:50px;color:#0056b9">
+      </span>
+    
+    </button>
+    
+    
+    </li>
+
+
+
+
+    <li class="list-group-item d-flex justify-content-between align-items-center" >
+      
+      <img src="https://cdn.onlineradiobox.com/img/logo/7/60907.v12.png" >
+      <span style="padding-left: 20px; padding-right: 20px;">  Retro Bollywood  </span>
+      <button class="play-btn" onclick='playRadio("retro-bollywood")' >
+        <audio id="retro-bollywood" style="display: none;">
+          
+        <source src="https://stream.zeno.fm/60ef4p33vxquv">
+
+      </audio>
+      
+      
+      <span class="fa fa-play-circle" style="font-size:50px;color:#c5a31f;">
+      </span>
+    
+    </button>
+    
+    </li>
+
+
+
+
+    <li class="list-group-item d-flex justify-content-between align-items-center" >
+      
+      <img src="https://cdn.onlineradiobox.com/img/logo/1/3791.v2.png" >
+      <span style="padding-left: 20px; padding-right: 20px;">  FM Rainbow </span>
+      <button class="play-btn" onclick='playRadio("hits-of-bollywood")' >
+        <audio id="hits-of-bollywood" style="display: none;">
+          
+        <source src="http://64.71.79.181:5124/stream">
+
+      </audio>
+      
+      
+      <span class="fa fa-play-circle" style="font-size:50px;color:#000000;">
+      </span>
+    
+    </button>
+    
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center" >
+      
+      <img src="https://cdn.onlineradiobox.com/img/logo/3/78503.v10.png" >
+      <span style="padding-left: 20px; padding-right: 20px;">  Bollywood Punjabi Radio </span>
+      <button class="play-btn" onclick='playRadio("bollywood-pubjabi-radio")' >
+        <audio id="bollywood-pubjabi-radio" style="display: none;">
+          
+        <source src="https://stream.zeno.fm/1k0y9f0cm0quv">
+
+      </audio>
+      
+      
+      <span class="fa fa-play-circle" style="font-size:50px;color:#932121;">
+      </span>
+    
+    </button>
+    
+    </li>
+    <li >
+      <div class="container">
+      <button class="float-right" id="close-btn-radio">
+    <span style='font-size:20px; '>&#10006;</span>
+  </button>
+</div>
+    </li>
+
+    
+
+
+  </ul>
+</div>
+
+
+  
+    <div class=" container-header ">
+            <div class="jumbotron hero-image  text-center mb-0" id="bg-image-text">
+              <h1 class=" text-center    welcome-heading">Bienvenidos  
+              </h1>
+              <p class="text-center  welcome-heading ">a</p>
+              
+              <h1 class=" text-center   welcome-heading notranslate">Baila Bollywood</h1>
+            </div>
+          </div>
+
+
+
+  <!---------------------------------------------------------- Modal Box----------------------------------------------- -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header ">
+          <h5 class="modal-title ml-auto mr-auto" id="exampleModalLongTitle"><i class="fa fa-id-card mr-3" style="color:#f5af19;"></i>Contacto
+          </h5>
+          <button type="button" class="close ml-0" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <form class="contact-us" id="contact-form" action="/contact-us" method="POST">
+             <div class="form-group ">
+            <label for="txtname"  class="bg-white name-label"> <i style="color:#00F260 ;" class="fa fa-user ml-1 mr-2"></i>Correo Electrónico 
+            </label>
+            <input type="email"  required class="form-control" id="txtname" name="mail" placeholder="Enter Your Name">
+          </div>
+          <div class="form-group ">
+            <label for="txtsubject"  class="bg-white subject-label"><i style="color:#ec2F4B;" class="fa fa-book mr-1"></i> Asunto</label>
+            <input type="text" name="subject"  required class="form-control" id="txtsubject" placeholder="Enter the Subject">
+          </div>
+          <div class="form-group">
+            <label for="message" class="bg-white email-label"> <i style="color:#667db6 ;" class="fa fa-comments  ml-1 mr-2"></i>Mensaje</label>
+          <textarea style="height:200px;" class="form-control"   id="message" placeholder="Type Your Query Here"></textarea>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-close" data-dismiss="modal">Cerrar</button>
+          <input type="submit" class="btn btn-save" value="Guardar Cambios " />
+        </div>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!------------------Image Gallery Section-two------------------------->
+  <section class="baila-section section-one">
+    <div class="container section_one-background">
+      <div class="jumbotron indian-classical-jumbotron text-center p-0">
+        <h2 class="display-3 heading-section">Danza y Música Clásica de la India 
+              </h2>
+        <div class="line mb-3"></div>
+        <img src="/images/dance-indian.jpg" class="traditional-dance-img ml-auto mr-auto mb-3" alt="Indian Dance image" />
+        <div class="indian_dance-music-history indian-dance-music-spanish notranslate">
+          <p>
+            <a href="https://es.wikipedia.org/wiki/India" target="_blank" title="India increíble">India</a> es famosa por sus danzas 
+            clásicas, tan diversas como su cultura misma; presentes en la mayoría de sus estados y provincias, estas danzas son un 
+            medio de expresión y representación de historias compiladas en textos mitológicos y religiosos, así como de la tradición 
+            oral de los pueblos originarios.<br><br>
+            Algunas de las características más importantes de estas danzas, son el significado del movimiento de las manos, los gestos 
+            y las posturas corporales; tres aspectos que configuran las actuaciones de danza clásica india, y que engloban el ritmo, 
+            la expresión y el espacio escénico en su totalidad. Además, el vestuario tradicional otorga un significado estético y 
+            profundo, que difiere dependiendo del estilo de danza y la región donde se practica. 
+            <br><br>
+            Por ejemplo, los bailarines de <a href="https://es.wikipedia.org/wiki/Bharatanatyam" target="_blank"
+            title="Forma de danza bharatnatyam">Bharatnatyam</a> usan un sari, mientras que los bailarines de <a
+            href="https://en.wikipedia.org/wiki/Kathak" target="_blank" title="Kathak Dance Form"> Kathak</a> usan un anarkali. 
+            Las diferencias, son notables, pero es precisamente esto lo que diversifica la cultura dancística de India y la 
+            pone en contacto con el exterior. Muchas formas de danza clásica india han sufrido grandes cambios al ponerse en 
+            contacto con la cultura occidental; sin embargo, se ha logrado mantener su esencia y su registro histórico a 
+            través del tiempo. 
+            <br><br>
+            Un elemento fundamental de la tradición dancística de India es la música, la cual incluye múltiples variedades, desde 
+            rap punjabi, música clásica del norte y sur de la India, música folklórica, música Bollywood, hasta desi rock y desi pop. 
+            Pero sin lugar a dudas, las canciones más famosas provienen del cine Bollywood, son tan populares que suelen bailarse en 
+            bodas, cumpleaños y cualquier tipo de celebración. 
+            <br><br>
+            A los indios les encanta bailar y probar nuevos ritmos. La danza y la música, han sido parte integral de la cultura india 
+            desde tiempos inmemoriales; ya sea música devocional, o un buen bollywood blast, en India siempre hay disposición para 
+            bailar y disfrutar.
+
+            <br><br>
+
+
+          
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row container mt-5 row-image ml-auto mr-auto ">
+      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6   mb-3">
+
+        <a href="/images/lady-playing-sitar.jpg" target="_blank">
+          <img class="image-gallery  " src="/images/lady-playing-sitar.jpg" alt="Lady with Sitar">
+        </a>
+
+      </div>
+      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6  mb-3">
+
+        <a href="/images/painting-5.jpg" target="_blank" >
+          <img class="image-gallery " src="/images/painting-5.jpg" alt="painting image">
+        </a>
+
+      </div>
+      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6  mb-3">
+
+        <a href="/images/painting-4.jpg" target="_blank">
+          <img class="image-gallery  " src="/images/painting-4.jpg" alt="painting-image 4">
+        </a>
+
+      </div>
+      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6  mb-3">
+
+        <a href="/images/painting-2.jpg" target="_blank">
+          <img class="image-gallery" src="/images/painting-2.jpg" alt="painting image 2">
+        </a>
+
+      </div>
+    </div>
+    </div>
+    
+  </section>
+
+
+  <!------------------About Us Section-three-------------------------->
+
+  <section class="baila-section section-two mb-5" id="about">
+    <div class="container">
+      <div class="jumbotron section_two-about-us text-center  ">
+        <h2 class="about-heading display-2 section-heading heading-section  ">
+          Sobre
+          <br>
+          Baila Bollywood
+        </h2>
+        <div class="line mt-3 mb-5 "></div>
+        <p class="about_us-paragraph spanish_translation text-justify notranslate">
+          <strong>BailaBollywood</strong> trabaja sobre la misión de ofrecer al mundo hispanohablante una experiencia de primera mano 
+          de la cultura india, con especial énfasis en la música, la danza, y el cine; generamos contenido independiente, diverso y 
+          totalmente en idioma español. 
+          <br><br>
+          Queremos acercar la cultura de la India al mundo hispanohablante, ampliar los horizontes a través de diversas formas de 
+          expresión, y reafirmar el vínculo cultural entre naciones. Nuestro objetivo es construir relaciones sólidas entre la India 
+          y los países de habla hispana, a través del arte y el conocimiento.
+          
+
+
+        </p>
+
+        
+
+      </div>
+
+    </div>
+  
+    
+  </section>
+
+
+  <!--Baila bollywood blogs section-->
+  <%if(blogs){%>
+  <div class="section-five review-slider" id="blogs">
+    <h1 class="section-heading text-white heading-section mx-5 mt-5 ml-5 mb-5 display-3 text-center">Nuestro Blog
+  </h1>
+    <div class="swiper-container container swiper-reviews">
+      <div class="swiper-wrapper ">
+        <%blogs.items.forEach(function(blog){%>
+        <div class="swiper-slide notranslate">
+          <div class="overlay-blog"></div>
+          <img class="review-image" alt="blog-images" src=<%=blog.imgUrl%>>
+          <a href=<%=blog.link%> style=" text-decoration:none; color:white; font-size: 1.5rem;" class="blog-name mb-5"
+            target="_blank"><%=blog.title%></a>
+          <p class="blog-date mt-5"><%=blog.pubDate%></p>
+        </div>
+        <%})%>
+        <div class="swiper-slide notranslate">
+          <a href="https://medium.com/@bailabollywood20" style=" text-decoration:none; "
+            class="medium-blog-link mb-5 btn btn-light " target="_blank">Show More</a>
+          <img class="review-image" src="/images/video-frame-img.jpeg" alt="vid frame image">
+        </div>
+      </div>
+      <br>
+      <!-- Add Pagination -->
+
+      <!-- Add Arrows -->
+      <div class="swiper-button-next swiper-btn "></div>
+      <div class="swiper-button-prev swiper-btn"></div>
+    </div>
+  </div>
+
+  <%}%>
+
+
+
+    <!----------------- Most Popular Categories Section-4----------------->
+
+    <section class="baila-section section-four" id="pop-categ">
+      
+      <h2 class="display-2 popular-artist-heading heading-section text-center">Descubrir
+      </h2>
+      <div class="line mt-4 mb-4"></div>
+       <h3 class="display-3 text-center heading-section">Artistas más populares
+      </h3>
+
+      <div class="container mt-5">
+
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6  mt-2">
+            <iframe class="popular-artist-videos" src="https://www.youtube.com/embed/j2t4a0233dU" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6  mt-2">
+            <iframe class="popular-artist-videos" src="https://www.youtube.com/embed/pXf-jeql3-k" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 mx-auto mt-2">
+            <iframe class="popular-artist-videos" src="https://www.youtube.com/embed/FqMB9pWTJpk" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+
+
+
+        <div class="row mt-5 justify-content-center ">
+          <a class="  load-more btn font-weight-bold" href="/login" target="_self"
+            title="Load More Videos">&#9733;&nbsp;&nbsp;&nbsp;Load More.&nbsp;&nbsp;&nbsp;&#9733;</a>
+        </div>
+      </div>
+      </div>
+
+
+    </section>
+
+
+
+
+    <!-----------------About Founder Section-5---------------------------------->
+    <section class="baila-section section-five" id="found-note">
+      <div class="container-fluid p-0">
+        <div class="jumbotron  content-center ">
+          <h3 class="font-weight-light text-center display-2 text-white heading-section">Nuestro fundador</h3>
+          <h4 class="font-weight-light text-center display-4 font-weight-bold text-white ">Subhas Yadav</h4>
+          <div class="line mt-2 mb-2  bg-white"></div>
+          <div class="container-founder-image mt-5 mb-5 justify-content-center">
+            <img src="/images/founder-sir.png" class="img-founder  " alt="Image of founder">
+          </div>
+          <div class=" text-white spanish_translation-founder text-white list-item  text-justify container notranslate">
+
+           <strong> Subhas Yadav </strong> es un estudioso de la lengua, la literatura y las culturas del mundo hispanohablante, cuya eterna misión es difundir aspectos culturales entre la India y el vasto mundo hispanohablante, especialmente América Latina y España.
+<br><br>
+Hace una década, durante sus años de ERASMUS en la Universidad de Santiago de Compostela, Subhas se dio cuenta de que muchos de sus amigos latinoamericanos y españoles tenían curiosidad para escuchar música india o ver películas bollywood con subtítulos en español, pero las posibilidades eran limitadas. Así surge la idea de crear SpanishBOLO y BailaBollywood, plataformas culturales y de aprendizaje del idioma español, con el objetivo de tender un puente entre la cultura india y los países de habla hispana.
+<br><br>
+Ambos proyectos,<strong> SpanishBOLO</strong> y<strong> BailaBollywood</strong>, pretenden explorar los rincones culturales de India y el mundo hispanohablante, para compartir y enriquecer experiencias y perspectivas de vida, con el compromiso de acercar estos dos mundos relativamente distantes.
+<br><br>
+            
+          </div>
+
+          
+
+
+
+          <div class="social-icons justify-content-center">
+            <a href="https://www.linkedin.com/in/subhasy/" class="fa fa-linkedin" title="Linkedin Link"
+              target="_blank"></a>
+            <a href="https://twitter.com/subhas_yadav" class="fa fa-twitter" title="Twitter Link" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-------------------Footer Section-six-------------------------------->
+    <% include ./partials/footer.ejs %>
+    
+</body>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164252858-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164252858-1');
+</script>
+
+
+
+
+
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+
+<script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us18.list-manage.com","uuid":"e146b28319d635f32356ab1e8","lid":"471ffe4c76","uniqueMethods":true}) })
+</script>
+
+<script>
+
+
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    spaceBetween: 0,
+    slidesPerGroup: 1,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+
+      250: {
+        slidesPerView: 1,
+        spaceBetween: 2,
+      },
+      450: {
+        slidesPerView: 2,
+        spaceBetween: 2,
+      },
+      600: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+    }
+
+  });
+</script>
+<script>
+  $("#radio-button").on('click',function(){
+    if($("#radio-list").css('display')==='none')
+    $("#radio-list").css('display','block');
+    else
+    $("#radio-list").css('display','none');
+    
+  });
+  $("#close-btn-radio").on('click',function(){
+    if($("#radio-list").css('display')==='block')
+    $("#radio-list").css('display','none');
+    
+    
+  });
+  
+  function playRadio(id) {
+    var audio = document.getElementById(id);
+    if(audio.paused)
+    audio.play();
+    else
+    audio.pause();
+}
+</script>
+
+
+</html>
